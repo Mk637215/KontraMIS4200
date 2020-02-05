@@ -16,7 +16,7 @@ namespace KontraMIS4200.Models
         // the next two properties link the orderDetail to the Product
         public int productID { get; set; }
 
-        public virtual Product { get; set; }
-
+      //  public virtual Product { get; set; }
+     // un - resolved error with line 19
 }
 }
