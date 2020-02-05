@@ -15,5 +15,7 @@ namespace KontraMIS4200.DAL
         }
         public DbSet<customer> Customers { get; set; }
         public DbSet<orders> Orders { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<orderDetail> orderDetail { get; set; }
     }
 }
