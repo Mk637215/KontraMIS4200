@@ -47,7 +47,7 @@ namespace KontraMIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "petId,name,gender")] Pet pet)
+        public ActionResult Create([Bind(Include = "petId,name,gender,species")] Pet pet)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace KontraMIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "petId,name,gender")] Pet pet)
+        public ActionResult Edit([Bind(Include = "petId,name,gender,species")] Pet pet)
         {
             if (ModelState.IsValid)
             {

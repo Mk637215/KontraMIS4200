@@ -17,6 +17,9 @@
         <th>
             @Html.DisplayNameFor(model => model.lastName)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.yearsOfExperience)
+        </th>
         <th></th>
     </tr>
 
@@ -27,6 +30,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yearsOfExperience)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.vetId }) |

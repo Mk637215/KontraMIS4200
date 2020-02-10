@@ -17,6 +17,9 @@
         <th>
             @Html.DisplayNameFor(model => model.gender)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.species)
+        </th>
         <th></th>
     </tr>
 
@@ -27,6 +30,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.species)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.petId }) |

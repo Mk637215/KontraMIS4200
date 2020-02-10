@@ -10,6 +10,7 @@ namespace KontraMIS4200.Models
         public int petId { get; set; }
         public string name { get; set; }
         public string gender { get; set; }
+        public string species { get; set; }
 
     }
 }
