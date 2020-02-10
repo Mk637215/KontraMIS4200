@@ -173,7 +173,9 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\orderDetailsController.cs" />
     <Compile Include="Controllers\ordersController.cs" />
+    <Compile Include="Controllers\PetsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\VetsController.cs" />
     <Compile Include="DAL\MIS4200Context.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -185,6 +187,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\orderDetail.cs" />
     <Compile Include="Models\orders.cs" />
+    <Compile Include="Models\Pet.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Vet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -267,6 +270,16 @@
     <Content Include="Views\orderDetails\Details.cshtml" />
     <Content Include="Views\orderDetails\Edit.cshtml" />
     <Content Include="Views\orderDetails\Index.cshtml" />
+    <Content Include="Views\Vets\Create.cshtml" />
+    <Content Include="Views\Vets\Delete.cshtml" />
+    <Content Include="Views\Vets\Details.cshtml" />
+    <Content Include="Views\Vets\Edit.cshtml" />
+    <Content Include="Views\Vets\Index.cshtml" />
+    <Content Include="Views\Pets\Create.cshtml" />
+    <Content Include="Views\Pets\Delete.cshtml" />
+    <Content Include="Views\Pets\Details.cshtml" />
+    <Content Include="Views\Pets\Edit.cshtml" />
+    <Content Include="Views\Pets\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
