@@ -22,7 +22,7 @@ namespace KontraMIS4200.Models
         // and the local name of the collection will be that Order
         // (the object name and the local name do not have to be the same)
 
-        public ICollection<Order> Order { get; set; }
+        
 
     }
 }

@@ -12,11 +12,10 @@ namespace KontraMIS4200.Models
         public decimal price { get; set; }
         // the next two properties link the orderDetail to the Order
         public int orderID { get; set; }
-        public virtual Order Order { get; set; }
+        
         // the next two properties link the orderDetail to the Product
         public int productID { get; set; }
 
-      //  public virtual Product { get; set; }
-     // un - resolved error with line 19
+      public virtual Product Product { get; set; }
 }
 }
