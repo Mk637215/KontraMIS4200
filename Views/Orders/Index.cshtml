@@ -1,4 +1,4 @@
-﻿@model IEnumerable<KontraMIS4200.Models.Order>
+﻿@model IEnumerable<KontraMIS4200.Models.orders>
 
 @{
     ViewBag.Title = "Index";
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.orderDate)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.orderID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.orderID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.orderID })
+            @Html.ActionLink("Edit", "Edit", new { id=item.orderNum }) |
+            @Html.ActionLink("Details", "Details", new { id=item.orderNum }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.orderNum })
         </td>
     </tr>
 }
