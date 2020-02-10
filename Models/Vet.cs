@@ -11,6 +11,9 @@ namespace KontraMIS4200.Models
         public string firstName { get; set; }
         public string lastName { get; set; }
         public string yearsOfExperience { get; set; }
+        public ICollection<appointmentDetail> appointmentDetail { get; set; }
+
+
 
 
     }

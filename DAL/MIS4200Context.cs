@@ -23,5 +23,7 @@ namespace KontraMIS4200.DAL
         public System.Data.Entity.DbSet<KontraMIS4200.Models.Vet> Vets { get; set; }
 
         public System.Data.Entity.DbSet<KontraMIS4200.Models.Pet> Pets { get; set; }
+
+        public System.Data.Entity.DbSet<KontraMIS4200.Models.appointmentDetail> appointmentDetails { get; set; }
     }
 }

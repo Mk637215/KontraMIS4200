@@ -1,0 +1,42 @@
+﻿@model KontraMIS4200.Models.appointmentDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>appointmentDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Pet.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pet.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vet.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vet.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.appointmentDetailId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

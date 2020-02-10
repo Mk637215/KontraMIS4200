@@ -11,6 +11,9 @@ namespace KontraMIS4200.Models
         public string name { get; set; }
         public string gender { get; set; }
         public string species { get; set; }
+        public ICollection<appointmentDetail> appointmentDetail { get; set; }
+
+        public virtual Vet Vet { get; set; }
 
     }
 }
