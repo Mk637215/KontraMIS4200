@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 using KontraMIS4200.Models;
@@ -25,5 +26,10 @@ namespace KontraMIS4200.DAL
         public System.Data.Entity.DbSet<KontraMIS4200.Models.Pet> Pets { get; set; }
 
         public System.Data.Entity.DbSet<KontraMIS4200.Models.appointmentDetail> appointmentDetails { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+        }
     }
 }

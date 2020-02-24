@@ -11,6 +11,7 @@ namespace KontraMIS4200.Migrations.MISContext
         {
             AutomaticMigrationsEnabled = true;
             MigrationsDirectory = @"Migrations\MISContext";
+            ContextKey = "KontraMIS4200.DAL.MIS4200Context";
         }
 
         protected override void Seed(KontraMIS4200.DAL.MIS4200Context context)
