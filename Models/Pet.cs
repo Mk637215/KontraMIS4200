@@ -11,6 +11,7 @@ namespace KontraMIS4200.Models
     public class Pet
     {
         public int petId { get; set; }
+
         [Display (Name = " Pet's Name")]
         [Required(ErrorMessage = "Pet's name is required")]
         [StringLength(20)]
@@ -26,7 +27,7 @@ namespace KontraMIS4200.Models
         public ICollection<appointmentDetail> appointmentDetail { get; set; }
 
         public int vetId { get; set; }
-        public virtual Vet Vet { get; set; }
+       // public virtual Vet Vet { get; set; }
 
     }
 }
